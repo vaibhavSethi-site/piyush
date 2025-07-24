@@ -1,0 +1,601 @@
+.App {
+  text-align: center;
+}
+
+/* Sidebar.css */
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; /* Adjust the width of the sidebar as needed */
+  background-color: navy;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  /* position: fixed;
+  margin-right: 10px; */
+
+}
+
+
+
+
+
+.card {
+  width: 250px; /* Set the width of each card to 25% with some spacing */
+  margin-bottom: 20px; /* Add margin between cards */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 1px solid #ddd; /* Add a border for better visibility */
+  padding: 10px; /* Add padding for better spacing within the card */
+}
+/* Add this CSS to your stylesheet */
+
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.close-icon{
+  margin-left: 90%;
+}
+
+.popup1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1001; /* Make sure the popup appears above the overlay */
+}
+
+
+.red-text {
+  background-color: green;
+  color: white;
+}
+
+.green-text{
+  color: green
+}
+
+
+.btn-action{
+  color: white;
+  background-color: navy;
+  border-radius: 5px;
+}
+
+.popup.open {
+  display: block;
+}
+
+
+.card-body {
+  flex-direction: 1 1 auto;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.toggle-btn {
+  font-size: 24px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid #555;
+}
+
+li:hover {
+  background-color: #333;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.size-card {
+  border-color: navy;
+  color: navy;
+  height: 150px;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.roller-tabs-table {
+  margin: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-buttons button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tab-buttons button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.roller-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.roller-table th,
+.roller-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.roller-table th {
+  background-color: rgb(76, 76, 81);
+  color: white;
+}
+
+.tabs-roller {
+  border-right: 1px solid rgb(44, 44, 61);
+  border-bottom: 1px solid rgb(44, 44, 61);
+  padding: 10px;
+}
+
+.roller-table th,
+.roller-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-inventory {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.striped-table th, .striped-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table-cap{
+  width: 70%;
+  margin-left: 10%;
+}
+
+.input-search{
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.input-search input {
+  width: 250px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  padding: 5px;
+  border-radius: 5px;
+  /* Add more styles as needed */
+}
+
+/* RecordOfTransactions.css */
+
+/* Add styles for the modal overlay */
+/* AddPaymentModal.css */
+
+
+/* AddPaymentModal.css */
+.modal-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%; /* Set the width to 40% of the viewport */
+  max-width: 400px; /* Optionally, you can set a max-width */
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.heading-container{
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.heading-container input{
+  border-radius: 5px;
+}
+
+.btn-inventory{
+  width: 80%;
+  margin-left:10% ;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333; /* Change the color to your preference */
+}
+
+
+
+/* Add any additional styles as needed */
+
+
+.skip-btn{
+  margin-left: 75%;
+  margin-top: 10%;
+  font-size: larger;
+}
+
+.search{
+  margin-left: 80%;
+  margin-top: 10px;
+}
+
+.search-input {
+  width: 200px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  padding: 5px 30px 5px 10px; /* Adjust padding to accommodate the icon */
+  background-image: url('https://www.iconpacks.net/icons/2/free-search-icon-3076-thumb.png'); /* Replace with the path to your search icon */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Adjust the position of the icon */
+  background-size: 20px 20px; /* Adjust the size of the icon */
+  /* Add more styles as needed */
+
+  
+}
+
+
+.search-icon {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  /* You can customize the icon styles or use an actual icon library */
+}
+
+
+
+.even-row {
+  background-color: #f0f5ff; /* Light navy color */
+}
+
+.odd-row {
+  background-color: transparent; /* Colorless */
+}
+
+
+.card-customer {
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+
+.tab-rollers {
+  padding: 10px 60px;
+  margin-top: 20px;
+}
+
+.billing-container {
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.dropdown-gst {
+  padding: 0.375rem 0.75rem;
+  border-radius: 5px;
+  width: 85%;
+  display: block;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-login {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: navy;
+  font-weight: bold;
+}
+
+
+.input-table {
+  border: none !important;
+}
+
+.icon-plus {
+  margin-left: 80%;
+}
+
+.icon-plus1 {
+  cursor: pointer;
+  color: navy;
+  margin-top: 10px;
+  margin-left: 70%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cross{
+  margin-left: 95%;
+}
+
+.popup-details{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cancel-icon {
+  cursor: pointer;
+  margin-left: 90%;
+  color: #888; /* Adjust the color as needed */
+  font-size: 18px;
+  margin-left: 5px; /* Adjust the margin as needed */
+}
+
+
+.add-item-popup {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.right-details {
+  margin-left: 60%;
+}
+
+.discount-border {
+  border-bottom: "1px solid lightgray" !important;
+  border-left: "none" !important;
+  border-right: "none" !important;
+  border-top: "none" !important
+  ;
+  outline: "none" !important;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns in a row */
+  gap: 20px; /* Adjust the gap between cards */
+  padding: 20px;
+  margin-top: 120px;
+  margin-left: 250px;
+}
+
+.checkout-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  margin-bottom: 20px;
+}
+
+.product-details h3 {
+  margin-bottom: 10px;
+}
+
+.quantity {
+  margin-bottom: 20px;
+}
+
+.quantity label {
+  font-weight: bold;
+}
+
+.total {
+  margin-bottom: 20px;
+}
+
+.img-fluid1 {
+  max-width: 100%;
+  height: 20rem;
+}
+
+.checkout-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-button:hover {
+  background-color: #45a049;
+}
+
+.main-content {
+  flex-grow: 1; /* Make the main content area grow to fill the remaining space */
+}
+
+.top-navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.product {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 20px; /* Add margin between product cards */
+}
+
+.admin-actions {
+  margin-left: 83%; /* This will push the "admin-actions" to the right */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.deleteBtn{
+  display: block;
+  margin:  0px auto;
+  background: red;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+
+.editBtn{
+  display: block;
+  margin:  0px auto;
+  background: rgb(0, 115, 255);
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
